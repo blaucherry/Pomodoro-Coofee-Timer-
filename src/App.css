@@ -1,0 +1,215 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    sans-serif;
+  background-color: #f7ebe5;
+  color: #3f2a28;
+}
+
+body {
+  margin: 0;
+}
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.app-header {
+  text-align: center;
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+.app-subtitle {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: #7a5a52;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.app-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.75rem 1rem 1rem;
+  border-top: 1px solid #e2c9bf;
+  background-color: #f5e2d9;
+}
+
+.nav-btn {
+  flex: 1;
+  margin: 0 0.25rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  cursor: pointer;
+  color: #735047;
+}
+
+.nav-btn--active {
+  background-color: #d8b4a0;
+  color: #3f2a28;
+}
+
+/* Timer */
+
+.timer-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 1.75rem 1.5rem;
+  border-radius: 24px;
+  background: #fff7f2;
+  box-shadow: 0 14px 40px rgba(63, 42, 40, 0.15);
+  text-align: center;
+}
+
+.timer-card--focus {
+  background: #ffece1;
+}
+
+.timer-card--short_break {
+  background: #e4f3e8;
+}
+
+.timer-card--long_break {
+  background: #efe6ff;
+}
+
+.timer-mode-label {
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8c6660;
+  margin-bottom: 0.5rem;
+}
+
+.timer-time {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.timer-subtitle {
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  color: #6e4b44;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  border-radius: 999px;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #c6775b;
+  color: #fff7f2;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background: #f5ded2;
+  color: #5c3a32;
+}
+
+.timer-cycle {
+  font-size: 0.85rem;
+  color: #7a5a52;
+  margin-bottom: 1rem;
+}
+
+.timer-illustration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.cup {
+  width: 80px;
+  height: 55px;
+  border-radius: 0 0 26px 26px;
+  background: #fdf3eb;
+  border: 3px solid #cfa28f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cup::before {
+  content: "";
+  position: absolute;
+  right: -18px;
+  top: 16px;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  border: 3px solid #cfa28f;
+}
+
+.cup-face {
+  font-size: 1.2rem;
+  color: #915c4b;
+}
+
+.timer-illustration-text {
+  font-size: 0.85rem;
+  color: #7a5a52;
+}
+
+/* --- Layout para pantallas de escritorio --- */
+@media (min-width: 900px) {
+  .app-root {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .app-main {
+    padding: 3rem 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .timer-card {
+    max-width: 760px;              /* más ancho en desktop */
+    padding: 2.5rem 3rem;
+    text-align: left;
+    display: grid;                  /* dos columnas: info + ilustración */
+    grid-template-columns: 1.2fr 1fr;
+    column-gap: 2.5rem;
+  }
+
+  .timer-illustration {
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .timer-time {
+    font-size: 4rem;                /* un poco más grande en monitor */
+  }
+
+  .timer-controls {
+    justify-content: flex-start;
+  }
+}
+
