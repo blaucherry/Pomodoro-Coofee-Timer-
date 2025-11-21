@@ -1,20 +1,15 @@
+// src/App.jsx
 import { useState } from "react";
 import "./App.css";
-import Timer from "./components/Timer";
+import Home from "./pages/Home";
 
 function App() {
   const [activeTab, setActiveTab] = useState("home");
 
   const renderTab = () => {
-    if (activeTab === "home") {
-      return <Timer />;
-    }
-    if (activeTab === "stats") {
-      return <h2>Estadísticas (placeholder)</h2>;
-    }
-    if (activeTab === "settings") {
-      return <h2>Ajustes (placeholder)</h2>;
-    }
+    if (activeTab === "home") return <Home />;
+    if (activeTab === "stats") return <h2>Estadísticas (próximamente)</h2>;
+    if (activeTab === "settings") return <h2>Ajustes (próximamente)</h2>;
     return null;
   };
 
@@ -22,12 +17,12 @@ function App() {
     <div className="app-root">
       <header className="app-header">
         <h1>Café Pomodoro</h1>
-        <p className="app-subtitle">Un espacio cozy para concentrarte ☕</p>
+        <p className="app-subtitle">
+          Un espacio cozy para concentrarte ☕
+        </p>
       </header>
 
-      <main className="app-main">
-        {renderTab()}
-      </main>
+      <main className="app-main">{renderTab()}</main>
 
       <nav className="app-nav">
         <button
