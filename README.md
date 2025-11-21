@@ -25,12 +25,3 @@ Un registro visual de tu jornada que se siente como un diario personal:
 ### 🎨 UI "Cozy"
 - Diseño basado en tarjetas suaves y tipografías redondeadas.
 - Paleta de colores pastel y tonos crema para evitar la fatiga visual.
-
-## 🛠️ Stack Tecnológico
-
-*Este proyecto está construido con:*
-
-- **Frontend:** [Ej: React Native / Flutter / React.js]
-- **Estilos:** [Ej: Tailwind CSS / Styled Components]
-- **Estado:** [Ej: Redux / Context API]
-- **Iconos:** [Ej: Phosphor Icons / Heroicons]
