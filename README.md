@@ -1,16 +1,51 @@
-# React + Vite
+# POMODORO COFFEE TIMER🌿
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Productividad tranquila para mentes creativas.**
+> Una herramienta de enfoque diseñada bajo el concepto "Cozy UI" para acompañarte sin agobiarte.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 Sobre el Proyecto
 
-## React Compiler
+**[Nombre de tu App]** no es solo otro temporizador Pomodoro. Es un espacio digital diseñado para reducir la ansiedad por la productividad. Utilizando una estética cálida, bordes suaves y colores inspirados en la naturaleza, esta aplicación busca que el trabajo se sienta como un refugio, no como una obligación.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El objetivo principal es permitirte rastrear tus sesiones de **Focus, Deep Work y Descanso**, manteniendo un registro honesto pero amable de tu día a día.
 
-## Expanding the ESLint configuration
+## ✨ Características Principales
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ⏱️ Temporizador Adaptable
+- **Modos de Enfoque:** Selecciona entre *Focus, Deep Work* o *Lite* según tu energía.
+- **Estética Calma:** Sin alarmas estridentes ni colores rojos de urgencia.
+
+### 📅 Historial del Día (Daily Log)
+Un registro visual de tu jornada que se siente como un diario personal:
+- **Timeline:** Visualiza tus sesiones de hoy (Inicio - Fin).
+- **Estado de Sesión:** Marca tareas como ✅ Completadas o ⛔ Canceladas (sin culpa).
+- **Notas Rápidas:** Agrega reflexiones a tus sesiones ("Me distraje mucho", "Avance increíble") para entender mejor tus patrones de trabajo.
+
+### 🎨 UI "Cozy"
+- Diseño basado en tarjetas suaves y tipografías redondeadas.
+- Paleta de colores pastel y tonos crema para evitar la fatiga visual.
+
+## 🛠️ Stack Tecnológico
+
+*Este proyecto está construido con:*
+
+- **Frontend:** [Ej: React Native / Flutter / React.js]
+- **Estilos:** [Ej: Tailwind CSS / Styled Components]
+- **Estado:** [Ej: Redux / Context API]
+- **Iconos:** [Ej: Phosphor Icons / Heroicons]
+
+## 📸 Vistazo a la App (Wireframes)
+
+| Pantalla Principal | Historial del Día |
+|:---:|:---:|
+| ![Home](ruta/imagen1.png) | ![History](ruta/imagen2.png) |
+| *Temporizador y Modos* | *Lista de sesiones y notas* |
+
+## 🚀 Instalación y Uso
+
+Sigue estos pasos para correr el proyecto localmente:
+
+1. **Clona el repositorio:**
+   ```bash
+   git clone [https://github.com/tu-usuario/tu-repo.git](https://github.com/tu-usuario/tu-repo.git)
